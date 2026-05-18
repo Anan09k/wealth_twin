@@ -1,0 +1,17 @@
+services:
+  backend:
+    build: ./gyansetu-web/backend
+    environment:
+      - PORT=8080
+      - CORS_ORIGIN=http://localhost:3000
+    ports:
+      - "8080:8080"
+  frontend:
+    build:
+      context: ./gyansetu-web/frontend
+      args:
+        VITE_API_BASE: /api
+    depends_on:
+      - backend
+    ports:
+      - "3000:80"

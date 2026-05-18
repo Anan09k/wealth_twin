@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GyanSetu | Skill-first Learning</title>
+    <link rel="stylesheet" href="/src/styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container nav">
+        <strong>GyanSetu</strong>
+        <nav>
+          <a href="#programs">Programs</a><a href="#testimonials">Testimonials</a><a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+    <main class="container">
+      <section class="hero">
+        <h1>Learn practical skills. Build measurable outcomes.</h1>
+        <p>Modern, mobile-first learning experience with clear tracks, mentor support, and career-aligned projects.</p>
+      </section>
+      <section id="programs"><h2>Programs</h2><div id="programList" class="grid"></div></section>
+      <section id="testimonials"><h2>What learners say</h2><div id="testimonialList" class="grid"></div></section>
+      <section id="contact">
+        <h2>Book a demo</h2>
+        <form id="leadForm" class="card">
+          <input name="name" placeholder="Your name" required />
+          <input name="email" type="email" placeholder="Email" required />
+          <select name="interest" required>
+            <option value="">Choose interest</option>
+            <option>Career Starter Track</option>
+            <option>Industry Accelerator</option>
+            <option>Institution Partnership</option>
+          </select>
+          <button type="submit">Submit</button>
+          <p id="formMsg"></p>
+        </form>
+      </section>
+    </main>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
